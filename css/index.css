@@ -1,0 +1,129 @@
+:root{
+    --light-yellow: #FFDC80;
+    --orange: #FCAA3C;
+    --darkorange: #F1510D;
+    --black: #2C2C2C;
+    --darkred: #980303;
+    --red: #E3170A;
+}
+
+
+body{
+    font-family: "Didact Gothic", "cantarell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-weight: 200;
+    font-style: normal;
+    color: var(--black);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 2em;
+
+    .logo{
+        display:flex;
+        align-items: center;
+
+        img{
+            max-height: 3em;
+            padding-right: 0.4em;
+        }
+    }
+    .buscador{
+        position: relative;
+        display: inline-block;
+
+
+        input {
+            height: 2em;
+            width: 15em;
+             border-radius: 10px;
+             border: black 1px solid;
+             padding-left: 1em;
+             padding-right: 1em;
+             transition: width 0.3s ease;
+        }
+
+         &:hover input,
+         input:hover {
+             width: 22em;
+             border: black 2px solid;
+         }
+
+        img{
+            position: absolute;
+            right: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+main{
+
+    section.main{
+        padding: 2em;
+        height: 90dvh;
+        background-image: url('../img/background-yellowfood.jpeg');
+        background-size: auto 100%; /* Ajusta el alto de la imagen al 100% sin cubrir */
+        background-position: right; /* Coloca la imagen a la derecha */
+        background-repeat: no-repeat;
+        background-color: #ffc301;
+
+            h3{
+                color: white;
+                font-weight: 200;
+                font-size: 64px;
+                font-style: normal;
+                max-width: 10em;
+            }
+
+            h5{
+                color: var(--black);
+                font-weight: 200;
+                font-size: 32px;
+                padding: 0.5em 0em 0.5em 0em;
+            }
+        button{
+            font-family: "Didact Gothic", "cantarell", sans-serif;
+            font-size: 24px;
+            height: 2em;
+            width: 10em;
+            border-radius: 5px;
+            border: 0;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+        #login{
+            color: white;
+            background-color: var(--black);
+            margin-right: 1em;
+        }
+        #login:hover{
+            background-color: black;
+            transition: background-color 0.3s ease;
+        }
+        #register{
+            color: white;
+            font-width: 800;
+            background-color: var(--darkred);
+        }
+
+        #register:hover{
+            background-color: var(--red);
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    }
+
+
+}
